@@ -4,5 +4,50 @@ header{
 }
 .h{
     margin: 0%;
-    color: green;
+    color: yellow;
+}
+.nav-panel{
+    margin:0%;
+    color:aqua;
+    background-color: rgb(29, 29, 29);
+    padding: 12px 0px 11px;
+    display: flex;
+    animation: two 4s infinite;
+}
+@keyframes two{
+    25% {background-color: rgb(0, 7, 39);}
+    25% {background-color: rgb(14, 14, 14);}
+}
+/* .nav-panel:hover{
+    color: rgb(0, 212, 212);
+    background-color: rgb(29, 29, 29);
+} */
+.nav-head{
+    margin-right: 10%;
+    padding-left: 5%;
+    padding-right: 10px;
+    border-style: solid;
+    border-width: 0px 2px 0px 0px;
+}
+/* .nav-container{
+    margin-left: 10%;
+    margin-right: 20%;
+} */
+a{
+    text-decoration: none;
+    font-weight:700;
+    color: antiquewhite;
+}
+.tag{
+    text-align: center;
+    font-display:auto;
+    padding: 7px 35px;
+    margin: 0px 5px;
+    border-radius: 30px;
+}
+.tag:hover{
+    color: aqua;
+    background-color: rgb(14, 14, 14);
+    border: solid 1px aqua;
+    padding: 7px 34px;
 }

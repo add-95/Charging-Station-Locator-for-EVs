@@ -8,5 +8,6 @@ console.log("Router Loaded..");
 router.get('/', homeController.home);
 router.get('/about', aboutController.about);
 
+router.use('/maps', require('./mainMap'));
 
 module.exports = router;
