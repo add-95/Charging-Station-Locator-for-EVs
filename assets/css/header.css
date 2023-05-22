@@ -20,12 +20,22 @@ header{
     color: rgb(0, 212, 212);
     background-color: rgb(29, 29, 29);
 } */
+i{
+    margin-top: 5px;
+    margin-right: 5px;
+}
+i:hover{
+    color: goldenrod;
+}
 .nav-head{
     margin-right: 10%;
     padding-left: 5%;
     padding-right: 10px;
     border-style: solid;
     border-width: 0px 2px 0px 0px;
+}
+.i-head:hover{
+    color:aqua
 }
 /* .nav-container{
     margin-left: 10%;
