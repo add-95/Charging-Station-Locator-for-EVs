@@ -9,7 +9,7 @@ app.use('/', require('./routes'));
 // set up our view engine
 app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname,'views'));
-
+  
 app.use(express.static('assets'));
 
 app.listen(port, function(err){

@@ -49,3 +49,9 @@ a{
     border: solid 1px aqua;
     padding: 7px 34px;
 }
+/* .tag:focus{
+    color: gold;
+    background-color: rgb(14, 14, 14);
+    border: solid 1px gold;
+    padding: 7px 34px;
+} */

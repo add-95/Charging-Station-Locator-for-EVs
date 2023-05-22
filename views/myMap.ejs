@@ -3,13 +3,26 @@
     <title>
         <%= title %>
     </title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="/css/default.css">
     <link rel="stylesheet" href="/css/myMap.css">
   </head>
   <body>
     <%- include('_header') %>
 
-    <h3>My Main Google Maps</h3>
+    <ion-header [translucent]="true">
+      <ion-toolbar class="search-bar-container">
+          <i class="fa fa-bars menu-btn"></i>
+          <div class="search-area">
+            <i class="fa fa-search search-btn"></i>
+            <input class="search-bar" placeholder="Search Here">
+          </div>
+
+      </ion-toolbar>
+    </ion-header>
+    <ion-content class="ion-padding">
+      <h1>ion-Content</h1>
+    </ion-content>
 
     <%- include('_footer') %>
   </body>
