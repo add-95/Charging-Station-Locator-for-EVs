@@ -95,8 +95,10 @@ body {
 	font-size: 140%;
 	color: red;
 	border: solid 3px white;
+	border-radius: 20px;
 	background-color: #c8ff00;
 	box-shadow: 5px 3.5px 8px black;
+	margin-right: 1%;
 }
 li.items{
 	color: black;

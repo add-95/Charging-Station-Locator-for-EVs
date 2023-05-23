@@ -20,7 +20,7 @@ header{
 } */
 
 .nav-panel{
-    margin:0%;
+    margin: 0%;
     position: -webkit-sticky;
     position: sticky;
     top: 0;
@@ -38,6 +38,10 @@ header{
     color: rgb(0, 212, 212);
     background-color: rgb(29, 29, 29);
 } */
+.full-page-logo{
+    margin:0%;
+    margin-right: 25px;
+}
 .nav-head{
     margin-right: 10%;
     padding-left: 5%;
@@ -55,7 +59,10 @@ i{
     margin-right: 5px;
 }
 i:hover{
-    color: darkcyan;
+    color: greenyellow;
+}
+.i-head{
+    margin-top: 11px;
 }
 .i-head:hover{
     color:aqua
@@ -83,3 +90,11 @@ i:hover{
     border: solid 1px gold;
     padding: 7px 34px;
 } */
+.location{
+    margin: 0%;
+    margin-left: 100px;
+    display: flex;
+}
+.location-button{
+    height:fit-content;
+}
