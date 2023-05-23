@@ -114,6 +114,7 @@ li.items:hover{
 	width: 636px;
 	height: 318px;
 	opacity:0.8;
+	border-top-right-radius: 60px;
 }
 .bottom-right{
 	margin-left: 5px;
