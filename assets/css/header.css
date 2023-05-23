@@ -6,6 +6,9 @@ header{
 }
 .nav-panel{
     margin:0%;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
     color:aqua;
     background-color: rgb(29, 29, 29);
     padding: 12px 0px 11px;

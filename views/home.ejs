@@ -4,17 +4,60 @@
         <title>
             <%= title %>
         </title>
+        <link rel="icon" href="/icon/favicon.ico">
         <link rel="stylesheet" href="/css/default.css">
         <link rel="stylesheet" href="/css/home.css">
     </head>
 
 <body class="motion">
     <%- include('_header') %>
+        <!-- Top-Container -->
+        <div class="top-container">
+            <div class="top-heading-container">
+                <div class="top-heading left">
+                    <h1>Wellcome to the website</h1>
+                </div>
+                <a class="top-heading right" href="/maps/my-map">
+                    <h1>
+                        <%= title %>.com
+                    </h1>
+                </a>
+            </div>
+            <span class="top-description">This website will gonna help you find the nearest charging station for your
+                Elerctronic Vehicles.</span>
+        </div>
+
+        <!-- Middle Container -->
+        <div class="middile-container">
+            <h1 class="center-align middle-heading">What is a EV Charging Station?</h1>
+            <div class="middle-img-details">
+                <a href="/images/Chargers for EVs.jpeg"><img class="middle-first-img" src="/images/Chargers for EVs.jpeg" alt="A picture that have four Chargers" height="400" width="600"></a>
+                <ul>
+                    <a href="/images/Charging equipment to charge a EV Car.jpg"><li class="items">
+                        An Electric Vehicle Charger is a equipment that connects an electric vehicle (EV) to a source of electricity to recharge electric cars.
+                    </li></a>
+                    <a href="/images/Charging Station.jpg"><li class="items">
+                        And as you can guess, a Electric Vehicle Charging station got multiple charger just as other Patrol pumps.
+                    </li></a>
+                    <a href="/images/Future Station.jpg"><li class="items">
+                        This is the Best way of Tranportation for Upcoming Future generations to prevent run out of Fuels.
+                    </li></a>
+                </ul>
+            </div>
+        </div>
 
 
-        <h1>Home Page | <%= title %></h1>
-        
-
+        <!-- Bottom-Container -->
+        <div class="bootom-container">
+            <div class="bottom-left">
+            </div>
+            <div class="bottom-right">
+                <a class="bottom-right-heading center-align" href="/maps/my-map"><h1>Click Here to go to <br>EV Station Locator</h1></a>
+                <div class="bottom-last">
+                    <img class=" bottom-circle" src="/images/Charger for EVs at night.jpeg" alt="A pic of Chraging Station at night" width="183px" height="183px">
+                </div>
+            </div>
+        </div>
     <%- include('_footer') %>
 </body>
 </head>

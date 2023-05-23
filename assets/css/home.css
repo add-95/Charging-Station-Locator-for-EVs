@@ -1,8 +1,8 @@
 body {
-	background: linear-gradient(-45deg, #c8ff00, #06eeff, #23a6d5, #23d5ab);
+	background: linear-gradient(-45deg, #c8ff00, #06eeff, #7cff6b, #23d5ab);
 	background-size: 400% 400%;
 	animation: gradient 15s ease infinite;
-	height: 100vh;
+	/* height: 100vh; */
 }
 @keyframes gradient {
 	0% {
@@ -15,9 +15,130 @@ body {
 		background-position: 0% 50%;
 	}
 }
-h1{
-    margin: 0%;
-    text-align: center;
-    background-color: rgb(5, 241, 170);
+
+/*  */
+
+.top-container{
+	background-image: url("/images/EV\ charging\ Station.jpg");
+	background-repeat: no-repeat;
+	background-size: 100%;
+	opacity: 0.6;
+	height: 800px;
+}
+.top-heading-container{
+	text-align: center;
     color: teal;
+	display: flex;
+	justify-content: center;
+}
+.top-heading{
+	margin: 1% 0%;
+	background-color: rgb(5, 241, 170);
+	border: solid 3px teal;
+	border-radius: 10em;
+	padding: 10px;
+}
+.left{
+	border-top-right-radius: 0px;
+	border-bottom-right-radius: 0px;
+	margin-right: 5px;
+}
+.right{
+	border-top-left-radius: 0px;
+	border-bottom-left-radius: 0px;
+	color: teal;
+}
+
+.top-description{
+	zoom: 150%;
+	display: flex;
+	justify-content: center;
+	margin-top: 8%;
+	margin-bottom: 50px;
+}
+
+/*  */
+
+.middle-container{
+	height: 600px;
+}
+.middle-heading{
+	zoom: 150%;
+	color: teal;
+	animation: simple 3s infinite;
+}
+@keyframes simple{
+	25%{color: blueviolet; font-size: 200%;}
+	25%{color: Blue; font-size:220%;}
+}
+.middle-img-details{
+	display: flex;
+	margin: 5% 10px 10% 4%;
+}
+.middle-first-img{
+	/* margin: 5% 0% 4% 4%; */
+	border: solid 10px white;
+	border-radius: 30px;
+	box-shadow: 8px 5px 15px black;
+}
+.middle-first-img:hover{
+	box-shadow: 14px 10px 20px black;
+}
+li.items{
+	color: black;
+	margin: 5% 1% 1% 0.5%;
+	font-size: 140%;
+	border: solid 2px white;
+	border-radius: 20px;
+	background-color: #c8ff00;
+	padding:  10px;
+	text-align: justify;
+	box-shadow: 6px 4px 11px black;
+}
+li.items:hover{
+	color:blue;
+	box-shadow: 14px 10px 20px black;
+}
+
+/*  */
+
+.bootom-container{
+	display: flex;
+	justify-content: space-between;
+}
+
+.bottom-left{
+	background-image: url("/images/charging\ EV\ cartoon.png");
+	background-repeat: no-repeat;
+	background-size: 100%;
+	width: 636px;
+	height: 318px;
+	opacity:0.8;
+}
+.bottom-right{
+	margin-left: 5px;
+	width: 710px;
+}
+.bottom-right-heading{
+	color: blue;
+	animation: color-change 2s infinite;
+}
+@keyframes color-change{
+	25%{color: teal;}
+	25%{color: red;}
+}
+.bottom-right-heading:hover{
+	zoom:110%;
+}
+.bottom-circle{
+	border: solid 5px white;
+	border-radius: 100%;
+}
+.bottom-circle:hover{
+	zoom: 105%;
+}
+.bottom-last{
+	padding-top: 20px;
+	display:flex;
+	justify-content: space-around;
 }

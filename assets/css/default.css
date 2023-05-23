@@ -19,3 +19,7 @@ iframe{
 a{
     text-decoration: none;
 }
+.center-align{
+    display: flex;
+    justify-content: center;
+}
