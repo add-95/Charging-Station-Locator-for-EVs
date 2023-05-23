@@ -1,9 +1,24 @@
 header{
     background-color: black;
+    display: flex;
 }
-.h{
+/* .h{
     color: yellow;
+} */
+.page-logo{
+    margin: 4px 5px 1px 10px;
 }
+.page-title{
+    /* font-family: Georgia, 'Times New Roman', Times, serif; */
+    font-weight: bold;
+    font-size: 180%;
+    color: rgba(107, 208, 255, 0.69);
+    /* animation: color-title 3s infinite; */
+}
+/* @keyframes color-title{
+    25%{color:red;}
+} */
+
 .nav-panel{
     margin:0%;
     position: -webkit-sticky;
@@ -23,19 +38,24 @@ header{
     color: rgb(0, 212, 212);
     background-color: rgb(29, 29, 29);
 } */
-i{
-    margin-top: 5px;
-    margin-right: 5px;
-}
-i:hover{
-    color: darkcyan;
-}
 .nav-head{
     margin-right: 10%;
     padding-left: 5%;
     padding-right: 10px;
     border-style: solid;
     border-width: 0px 2px 0px 0px;
+}
+a{
+    text-decoration: none;
+    font-weight:700;
+    color: antiquewhite;
+}
+i{
+    margin-top: 5px;
+    margin-right: 5px;
+}
+i:hover{
+    color: darkcyan;
 }
 .i-head:hover{
     color:aqua
@@ -44,11 +64,6 @@ i:hover{
     margin-left: 10%;
     margin-right: 20%;
 } */
-a{
-    text-decoration: none;
-    font-weight:700;
-    color: antiquewhite;
-}
 .tag{
     text-align: center;
     font-display:auto;

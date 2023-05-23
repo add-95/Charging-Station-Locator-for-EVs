@@ -13,6 +13,6 @@ module.exports.demo = function(req,res){
 module.exports.myMap = function(req,res){
 
     return res.render('myMap', {
-        title: "my_Map"
+        title: "Featured-Map"
     });
 }
