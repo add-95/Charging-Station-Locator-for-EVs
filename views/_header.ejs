@@ -20,21 +20,38 @@
     </div>
 
 
-
-    <div class="location">
+    <!-- <div class="location">
         <button class="location-button">Click to alow Location permission</button>
         <pre id="result"></pre>
+    </div> -->
+
+        <!-- <script>
+            if (navigator.geolocation) {
+                navigator.geolocation.getCurrentPosition(
+                    (position) => {
+                        console.log("Latitude: ", position.coords.latitude," & Longititude: ",position.coords.longitude);
+                        const bdcAPI = `https://api-bdc.net/data/reverse-geocode?latitude=${position.coords.latitude}&longitude=${position.coords.longitude}`
+                        // getAPI();
+                    },
+                    (err) => {
+                        alert(err.message);
+                    }
+                );
+            } else {
+                    alert("Geolocation is not supported by your browser");
+            }
+        </script> -->
 
         <!-- <script src="../controllers/location_controller.js"></script> -->
 
-        <script>
+        <!-- <script>
             // document.addEventListener("DOMContentLoaded", () => {
             const http = new XMLHttpRequest();
             const result = document.querySelector("#result");
 
-            document.querySelector("#share").addEventListener("click", () => {
-                findMyCoordinates();
-            });
+            // document.querySelector("#share").addEventListener("click", () => {
+            //     findMyCoordinates();
+            // });
 
             function findMyCoordinates() {
                 if (navigator.geolocation) {
@@ -60,12 +77,12 @@
                     if (this.readyState == 4 && this.status == 200) {
                         result.innerHTML = this.responseText;
                         const results = JSON.parse(this.responseText);
-                        console.log(result.locality);
+                        console.log("Result=> \n", result);
                     }
                 }
             }
             // });
 
-        </script>
-    </div>
+        </script> -->
+    
 </nav>
