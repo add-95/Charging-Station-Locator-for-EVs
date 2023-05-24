@@ -3,4 +3,11 @@ footer{
 }
 .f{
     color: cyan;
+    animation: color-swap 3s infinite;
+    display: flex;
+    justify-content: space-between;
+}
+@keyframes color-swap{
+    25%{color:greenyellow;}
+    25%{color: orangered;}
 }
