@@ -19,70 +19,21 @@
         <a class="tag" href="/about"><i class="fa-solid fa-address-card fa-lg "></i>About</a>
     </div>
 
+    <script>
+        var NodeGeocoder = require('node-geocoder');
 
-    <!-- <div class="location">
-        <button class="location-button">Click to alow Location permission</button>
-        <pre id="result"></pre>
-    </div> -->
+        var options = {
+            provider: 'google',
+            httpAdapter: 'https', // Default
+            apiKey: ' ', // for Mapquest, OpenCage, Google Premier
+            formatter: 'json' // 'gpx', 'string', ...
+        };
 
-        <!-- <script>
-            if (navigator.geolocation) {
-                navigator.geolocation.getCurrentPosition(
-                    (position) => {
-                        console.log("Latitude: ", position.coords.latitude," & Longititude: ",position.coords.longitude);
-                        const bdcAPI = `https://api-bdc.net/data/reverse-geocode?latitude=${position.coords.latitude}&longitude=${position.coords.longitude}`
-                        // getAPI();
-                    },
-                    (err) => {
-                        alert(err.message);
-                    }
-                );
-            } else {
-                    alert("Geolocation is not supported by your browser");
-            }
-        </script> -->
+        var geocoder = NodeGeocoder(options);
 
-        <!-- <script src="../controllers/location_controller.js"></script> -->
+        geocoder.reverse({ lat: 28.5967439, lon: 77.3285038 }, function (err, res) {
+            console.log(res);
+        });
+    </script>
 
-        <!-- <script>
-            // document.addEventListener("DOMContentLoaded", () => {
-            const http = new XMLHttpRequest();
-            const result = document.querySelector("#result");
-
-            // document.querySelector("#share").addEventListener("click", () => {
-            //     findMyCoordinates();
-            // });
-
-            function findMyCoordinates() {
-                if (navigator.geolocation) {
-                    navigator.geolocation.getCurrentPosition(
-                        (position) => {
-                            console.log(position.coords.latitude, position.coords.longitude);
-                            const bdcAPI = `https://api-bdc.net/data/reverse-geocode?latitude=${position.coords.latitude}&longitude=${position.coords.longitude}`
-                            getAPI(bdcAPI);
-                        },
-                        (err) => {
-                            alert(err.message);
-                        }
-                    );
-                } else {
-                    alert("Geolocation is not supported by your browser");
-                }
-            }
-
-            function getAPI(bdcAPI) {
-                http.open("GET", bdcAPI)
-                http.send()
-                http.onreadystatechange = function () {
-                    if (this.readyState == 4 && this.status == 200) {
-                        result.innerHTML = this.responseText;
-                        const results = JSON.parse(this.responseText);
-                        console.log("Result=> \n", result);
-                    }
-                }
-            }
-            // });
-
-        </script> -->
-    
 </nav>
